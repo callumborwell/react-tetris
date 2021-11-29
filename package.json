@@ -1,7 +1,7 @@
 {
   "name": "react-tetris",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://callumborwell.github.io/react-tetris/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
