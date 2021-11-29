@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {
-    BrowserRouter as Router, Switch, Route
+    BrowserRouter as Router, Routes, Route
 } from "react-router-dom";
 
 //ReactDOM.render(<App />, document.getElementById("root"));
 
 ReactDOM.render(
     <Router basename='/react-tetris'>
-        <Switch>
+        <Routes>
             <Route exact path='/' component={App} />
-        </Switch>
+        </Routes>
     </Router>, 
     document.getElementById('root')
 );
