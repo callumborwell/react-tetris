@@ -2,17 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {
-    BrowserRouter as Router, Switch, Route
-} from "react-router-dom";
+import BrowserRouter from 'react-router-dom/BrowserRouter';
 
 //ReactDOM.render(<App />, document.getElementById("root"));
 
 ReactDOM.render(
-    <Router basename='/react-tetris'>
-        <Switch>
-            <Route exact path='/' component={App} />
-        </Switch>
-    </Router>, 
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+     <App />
+   </BrowserRouter>, 
     document.getElementById('root')
 );
